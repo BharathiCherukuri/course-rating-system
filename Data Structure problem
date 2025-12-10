@@ -1,0 +1,18 @@
+public class FirstNonRepeatingChar {
+    public static Character firstNonRepeating(String s) {
+        if (s == null || s.isEmpty()) return null;
+        int[] count = new int[256]; 
+        for (char c : s.toCharArray()) {
+            count[c]++;
+        }
+        for (char c : s.toCharArray()) {
+            if (count[c] == 1) {
+                return c;
+            }
+        }
+        return null;
+    }
+    public static void main(String[] args) {
+        System.out.println(firstNonRepeating("aabbcde"));
+    }
+}
