@@ -25,6 +25,3 @@
     http://localhost:8080/courses/101/rating?userId=1&rating=5
     GET /courses/{courseId}/rating
     http://localhost:8080/courses/101/rating
-
-5. Data Structure problem Explanation
-   I used a fixed-size array of 256 elements to store character frequencies instead of a HashMap to improve time efficiency and avoid extra object overhead. This       allows constant-time access and keeps the algorithm simple.
